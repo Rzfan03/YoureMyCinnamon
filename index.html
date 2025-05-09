@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Youre My Cinnamon</title>
+    <title>My Cute Pink Website</title>
     <style>
         body {
             font-family: 'Comic Sans MS', cursive, sans-serif;
@@ -117,20 +117,21 @@
                 font-size: 1rem;
             }
             .container {
-                padding: 10px;
+                padding: 15px;
             }
         }
     </style>
 </head>
 <body>
-    <audio autoplay loop src="./music/music.mp3"></audio>
+    <audio id="bg-music" autoplay loop>
+        <source src="./music/music.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
 
     <div class="container">
-        <h1>Sent to me</h1>
-        <p>From Heaven</p>
-        <p>Siskaa Cinnamon</p>
-        <p>You My World🌍</p>
-        <button class="love-btn" id="love-btn">My Love For Youu</button>
+        <h1>💖 Welcome to My Cute Pink World 💖</h1>
+        <p>Click the button below to spread some love!</p>
+        <button class="love-btn" id="love-btn">Create Love Hearts</button>
     </div>
 
     <script>
@@ -174,7 +175,7 @@
         }
 
         // Set volume musik
-        document.getElementById('bg-music').volume = 0.3;
+        document.getElementById('bg-music').volume = 1.0;
 
         // Buah glitter secara acak
         setInterval(() => {
